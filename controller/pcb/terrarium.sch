@@ -1190,159 +1190,6 @@ F 3 "" H 9400 3500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9400 3500 9500 3500
-$Comp
-L Regulator_Linear:LM1117-3.3 U3
-U 1 1 61C5AF8F
-P 2400 8050
-F 0 "U3" H 2400 8292 50  0000 C CNN
-F 1 "LM1117-3.3" H 2400 8201 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 2400 8050 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 2400 8050 50  0001 C CNN
-	1    2400 8050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C2
-U 1 1 61C5DA16
-P 1950 8450
-F 0 "C2" H 2042 8496 50  0000 L CNN
-F 1 "10uF" H 2042 8405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 1950 8450 50  0001 C CNN
-F 3 "~" H 1950 8450 50  0001 C CNN
-	1    1950 8450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C3
-U 1 1 61C5EAA6
-P 2950 8450
-F 0 "C3" H 3042 8496 50  0000 L CNN
-F 1 "47uF" H 3042 8405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 2950 8450 50  0001 C CNN
-F 3 "~" H 2950 8450 50  0001 C CNN
-	1    2950 8450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R12
-U 1 1 61C5EFC3
-P 3250 8900
-F 0 "R12" V 3350 8900 50  0000 C CNN
-F 1 "300" V 3150 8900 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 3250 8900 50  0001 C CNN
-F 3 "~" H 3250 8900 50  0001 C CNN
-	1    3250 8900
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:LED LED4
-U 1 1 61C6039A
-P 3650 8500
-F 0 "LED4" H 3750 8400 50  0000 R CNN
-F 1 "POWER" H 3750 8600 50  0000 R CNN
-F 2 "LED_SMD:LED_1206_3216Metric" H 3650 8500 50  0001 C CNN
-F 3 "~" H 3650 8500 50  0001 C CNN
-	1    3650 8500
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR09
-U 1 1 61C6D8A1
-P 2400 8900
-F 0 "#PWR09" H 2400 8650 50  0001 C CNN
-F 1 "GND" H 2405 8727 50  0000 C CNN
-F 2 "" H 2400 8900 50  0001 C CNN
-F 3 "" H 2400 8900 50  0001 C CNN
-	1    2400 8900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Screw_Terminal_01x02 S4
-U 1 1 61C75C50
-P 1150 8550
-F 0 "S4" H 1230 8542 50  0000 L CNN
-F 1 "5v in" H 1230 8451 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1150 8550 50  0001 C CNN
-F 3 "~" H 1150 8550 50  0001 C CNN
-	1    1150 8550
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1350 8450 1550 8450
-Wire Wire Line
-	1550 8450 1550 8050
-Wire Wire Line
-	1550 8050 1950 8050
-Wire Wire Line
-	1300 8550 1350 8550
-Wire Wire Line
-	1550 8550 1550 8900
-Wire Wire Line
-	1550 8900 1950 8900
-Connection ~ 1350 8550
-Wire Wire Line
-	1350 8550 1550 8550
-Wire Wire Line
-	1950 8350 1950 8050
-Connection ~ 1950 8050
-Wire Wire Line
-	1950 8050 2100 8050
-Wire Wire Line
-	1950 8550 1950 8900
-Connection ~ 1950 8900
-Wire Wire Line
-	1950 8900 2400 8900
-Wire Wire Line
-	2400 8900 2400 8350
-Connection ~ 2400 8900
-$Comp
-L power:+3V3 #PWR010
-U 1 1 61CB24C1
-P 3650 7950
-F 0 "#PWR010" H 3650 7800 50  0001 C CNN
-F 1 "+3V3" H 3665 8123 50  0000 C CNN
-F 2 "" H 3650 7950 50  0001 C CNN
-F 3 "" H 3650 7950 50  0001 C CNN
-	1    3650 7950
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	2950 8350 2950 8050
-Wire Wire Line
-	2950 8050 2700 8050
-Wire Wire Line
-	2400 8900 2950 8900
-Wire Wire Line
-	3650 8900 3650 8650
-Wire Wire Line
-	2950 8550 2950 8900
-Connection ~ 2950 8900
-Wire Wire Line
-	2950 8900 3150 8900
-Wire Wire Line
-	3650 7950 3650 8050
-Wire Wire Line
-	3350 8900 3650 8900
-Wire Wire Line
-	2950 8050 3650 8050
-Connection ~ 2950 8050
-Connection ~ 3650 8050
-Wire Wire Line
-	3650 8050 3650 8350
-$Comp
-L power:+5V #PWR06
-U 1 1 61D1F9F3
-P 1550 7950
-F 0 "#PWR06" H 1550 7800 50  0001 C CNN
-F 1 "+5V" H 1565 8123 50  0000 C CNN
-F 2 "" H 1550 7950 50  0001 C CNN
-F 3 "" H 1550 7950 50  0001 C CNN
-	1    1550 7950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1550 7950 1550 8050
-Connection ~ 1550 8050
 NoConn ~ 11200 1700
 NoConn ~ 11200 2100
 NoConn ~ 11200 2200
@@ -1496,14 +1343,6 @@ Wire Notes Line
 	8450 4700 8450 700 
 Text Notes 8450 650  0    50   ~ 0
 ESP32 WROOM 32
-Wire Notes Line
-	700  7600 4000 7600
-Wire Notes Line
-	4000 7600 4000 9150
-Wire Notes Line
-	4000 9150 700  9150
-Wire Notes Line
-	700  9150 700  7600
 Text Notes 700  7550 0    50   ~ 0
 Power 3v3 and 5v
 Wire Notes Line
@@ -1516,4 +1355,165 @@ Wire Notes Line
 	8450 7150 8450 5000
 Text Notes 8450 4950 0    50   ~ 0
 DS3231 rtc
+Connection ~ 1550 8050
+Wire Wire Line
+	1550 7950 1550 8050
+$Comp
+L power:+5V #PWR06
+U 1 1 61D1F9F3
+P 1550 7950
+F 0 "#PWR06" H 1550 7800 50  0001 C CNN
+F 1 "+5V" H 1565 8123 50  0000 C CNN
+F 2 "" H 1550 7950 50  0001 C CNN
+F 3 "" H 1550 7950 50  0001 C CNN
+	1    1550 7950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 8050 3650 8350
+Connection ~ 3650 8050
+Connection ~ 2950 8050
+Wire Wire Line
+	2950 8050 3650 8050
+Wire Wire Line
+	3350 8900 3650 8900
+Wire Wire Line
+	3650 7950 3650 8050
+Wire Wire Line
+	2950 8900 3150 8900
+Connection ~ 2950 8900
+Wire Wire Line
+	2950 8550 2950 8900
+Wire Wire Line
+	3650 8900 3650 8650
+Wire Wire Line
+	2400 8900 2950 8900
+Wire Wire Line
+	2950 8050 2700 8050
+Wire Wire Line
+	2950 8350 2950 8050
+$Comp
+L power:+3V3 #PWR010
+U 1 1 61CB24C1
+P 3650 7950
+F 0 "#PWR010" H 3650 7800 50  0001 C CNN
+F 1 "+3V3" H 3665 8123 50  0000 C CNN
+F 2 "" H 3650 7950 50  0001 C CNN
+F 3 "" H 3650 7950 50  0001 C CNN
+	1    3650 7950
+	-1   0    0    -1  
+$EndComp
+Connection ~ 2400 8900
+Wire Wire Line
+	2400 8900 2400 8350
+Wire Wire Line
+	1950 8900 2400 8900
+Connection ~ 1950 8900
+Wire Wire Line
+	1950 8550 1950 8900
+Wire Wire Line
+	1950 8050 2100 8050
+Connection ~ 1950 8050
+Wire Wire Line
+	1950 8350 1950 8050
+Wire Wire Line
+	1550 8900 1950 8900
+Wire Wire Line
+	1550 8550 1550 8900
+Wire Wire Line
+	1550 8050 1950 8050
+Wire Wire Line
+	1550 8450 1550 8050
+Wire Wire Line
+	1350 8450 1550 8450
+$Comp
+L power:GND #PWR09
+U 1 1 61C6D8A1
+P 2400 8900
+F 0 "#PWR09" H 2400 8650 50  0001 C CNN
+F 1 "GND" H 2405 8727 50  0000 C CNN
+F 2 "" H 2400 8900 50  0001 C CNN
+F 3 "" H 2400 8900 50  0001 C CNN
+	1    2400 8900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED LED4
+U 1 1 61C6039A
+P 3650 8500
+F 0 "LED4" H 3750 8400 50  0000 R CNN
+F 1 "POWER" H 3750 8600 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 3650 8500 50  0001 C CNN
+F 3 "~" H 3650 8500 50  0001 C CNN
+	1    3650 8500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R12
+U 1 1 61C5EFC3
+P 3250 8900
+F 0 "R12" V 3350 8900 50  0000 C CNN
+F 1 "300" V 3150 8900 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 3250 8900 50  0001 C CNN
+F 3 "~" H 3250 8900 50  0001 C CNN
+	1    3250 8900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 61C5EAA6
+P 2950 8450
+F 0 "C3" H 3042 8496 50  0000 L CNN
+F 1 "47uF" H 3042 8405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 2950 8450 50  0001 C CNN
+F 3 "~" H 2950 8450 50  0001 C CNN
+	1    2950 8450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 61C5DA16
+P 1950 8450
+F 0 "C2" H 2042 8496 50  0000 L CNN
+F 1 "10uF" H 2042 8405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 1950 8450 50  0001 C CNN
+F 3 "~" H 1950 8450 50  0001 C CNN
+	1    1950 8450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LM1117-3.3 U3
+U 1 1 61C5AF8F
+P 2400 8050
+F 0 "U3" H 2400 8292 50  0000 C CNN
+F 1 "LM1117-3.3" H 2400 8201 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 2400 8050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 2400 8050 50  0001 C CNN
+	1    2400 8050
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	700  9150 700  7600
+Wire Notes Line
+	4000 9150 700  9150
+Wire Notes Line
+	700  7600 4000 7600
+Wire Notes Line
+	4000 7600 4000 9150
+Wire Wire Line
+	1350 8550 1550 8550
+Wire Wire Line
+	1300 8550 1350 8550
+Connection ~ 1350 8550
+$Comp
+L Connector:Screw_Terminal_01x02 S4
+U 1 1 61C75C50
+P 1150 8550
+F 0 "S4" H 1230 8542 50  0000 L CNN
+F 1 "5v in" H 1230 8451 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1150 8550 50  0001 C CNN
+F 3 "~" H 1150 8550 50  0001 C CNN
+	1    1150 8550
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
