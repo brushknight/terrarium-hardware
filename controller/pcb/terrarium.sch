@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector_Generic_MountingPin:Conn_01x03_MountingPin HT5
+L Connector_Generic_MountingPin:Conn_01x03_MountingPin SENS5
 U 1 1 61871FA0
 P 7200 8250
-F 0 "HT5" H 7150 8450 50  0000 L CNN
+F 0 "SENS5" H 7150 8450 50  0000 L CNN
 F 1 "3" H 7250 8250 50  0000 L CNN
 F 2 "Connector_JST:JST_XH_B3B-XH-AM_1x03_P2.50mm_Vertical" H 7200 8250 50  0001 C CNN
 F 3 "~" H 7200 8250 50  0001 C CNN
@@ -25,10 +25,10 @@ F 3 "~" H 7200 8250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic_MountingPin:Conn_01x03_MountingPin HT4
+L Connector_Generic_MountingPin:Conn_01x03_MountingPin SENS4
 U 1 1 618725D3
 P 6500 8250
-F 0 "HT4" H 6450 8450 50  0000 L CNN
+F 0 "SENS4" H 6450 8450 50  0000 L CNN
 F 1 "2" H 6550 8250 50  0000 L CNN
 F 2 "Connector_JST:JST_XH_B3B-XH-AM_1x03_P2.50mm_Vertical" H 6500 8250 50  0001 C CNN
 F 3 "~" H 6500 8250 50  0001 C CNN
@@ -36,10 +36,10 @@ F 3 "~" H 6500 8250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic_MountingPin:Conn_01x03_MountingPin HT3
+L Connector_Generic_MountingPin:Conn_01x03_MountingPin SENS3
 U 1 1 61872C21
 P 5800 8250
-F 0 "HT3" H 5750 8450 50  0000 L CNN
+F 0 "SENS3" H 5750 8450 50  0000 L CNN
 F 1 "1" H 5850 8250 50  0000 L CNN
 F 2 "Connector_JST:JST_XH_B3B-XH-AM_1x03_P2.50mm_Vertical" H 5800 8250 50  0001 C CNN
 F 3 "~" H 5800 8250 50  0001 C CNN
@@ -452,10 +452,10 @@ Wire Notes Line
 Text Notes 700  3200 0    50   ~ 0
 Status LED
 $Comp
-L Connector_Generic_MountingPin:Conn_01x03_MountingPin HT1
+L Connector_Generic_MountingPin:Conn_01x03_MountingPin SENS1
 U 1 1 619D5390
 P 9150 8250
-F 0 "HT1" H 9100 8450 50  0000 L CNN
+F 0 "SENS1" H 9100 8450 50  0000 L CNN
 F 1 "4" H 9200 8250 50  0000 L CNN
 F 2 "Connector_JST:JST_XH_B3B-XH-AM_1x03_P2.50mm_Vertical" H 9150 8250 50  0001 C CNN
 F 3 "~" H 9150 8250 50  0001 C CNN
@@ -463,10 +463,10 @@ F 3 "~" H 9150 8250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic_MountingPin:Conn_01x03_MountingPin HT2
+L Connector_Generic_MountingPin:Conn_01x03_MountingPin SENS2
 U 1 1 619D2951
 P 8450 8250
-F 0 "HT2" H 8400 8450 50  0000 L CNN
+F 0 "SENS2" H 8400 8450 50  0000 L CNN
 F 1 "4" H 8500 8250 50  0000 L CNN
 F 2 "Connector_JST:JST_XH_B3B-XH-AM_1x03_P2.50mm_Vertical" H 8450 8250 50  0001 C CNN
 F 3 "~" H 8450 8250 50  0001 C CNN
@@ -727,10 +727,10 @@ $EndComp
 Wire Wire Line
 	900  3500 900  3600
 $Comp
-L Connector_Generic_MountingPin:Conn_01x03_MountingPin HT6
+L Connector_Generic_MountingPin:Conn_01x03_MountingPin SENS6
 U 1 1 618718D1
 P 7750 8250
-F 0 "HT6" H 7700 8450 50  0000 L CNN
+F 0 "SENS6" H 7700 8450 50  0000 L CNN
 F 1 "4" H 7800 8250 50  0000 L CNN
 F 2 "Connector_JST:JST_XH_B3B-XH-AM_1x03_P2.50mm_Vertical" H 7750 8250 50  0001 C CNN
 F 3 "~" H 7750 8250 50  0001 C CNN
@@ -1391,7 +1391,7 @@ L Device:LED LED5
 U 1 1 61E277CA
 P 5050 8100
 F 0 "LED5" H 5150 8000 50  0000 R CNN
-F 1 "ACTIVE" H 5150 8200 50  0000 R CNN
+F 1 "SENS" H 5150 8200 50  0000 R CNN
 F 2 "LED_SMD:LED_1206_3216Metric" H 5050 8100 50  0001 C CNN
 F 3 "~" H 5050 8100 50  0001 C CNN
 	1    5050 8100
