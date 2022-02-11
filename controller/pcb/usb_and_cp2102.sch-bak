@@ -331,9 +331,9 @@ F 3 "https://www.onsemi.com/pub/Collateral/BC818-D.pdf" H 5850 4650 50  0001 L C
 	1    5850 4650
 	1    0    0    1   
 $EndComp
-Text GLabel 4900 4550 2    50   Input ~ 0
-RX
 Text GLabel 4900 4650 2    50   Input ~ 0
+RX
+Text GLabel 4900 4550 2    50   Input ~ 0
 TX
 $Comp
 L power:+5V #PWR?
@@ -381,9 +381,11 @@ Wire Wire Line
 Wire Wire Line
 	2450 4050 3100 4050
 $Comp
-L CP2102N-A02-GQFN24:CP2102N-A02-GQFN24 U4
+L terrarium-rescue:CP2102N-A02-GQFN24-CP2102N-A02-GQFN24 U4
 U 1 1 61F6C1D8
 P 3000 3150
+AR Path="/61F6C1D8" Ref="U4"  Part="1" 
+AR Path="/623D759E/61F6C1D8" Ref="U4"  Part="1" 
 F 0 "U4" H 4000 3415 50  0000 C CNN
 F 1 "CP2102N-A02-GQFN24" H 4000 3324 50  0000 C CNN
 F 2 "cp2102:Silicon_Labs-CP2102N-A02-GQFN24-IPC_A" H 3000 3550 50  0001 L CNN
