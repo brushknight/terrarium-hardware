@@ -1,22 +1,73 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_Generic_Conn_01x02
+# CP2102N-A02-GQFN28_CP2102N-A02-GQFN28
 #
-DEF Connector_Generic_Conn_01x02 J 0 40 Y N 1 F N
-F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Generic_Conn_01x02" 0 -200 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_1x??_*
-$ENDFPLIST
+DEF CP2102N-A02-GQFN28_CP2102N-A02-GQFN28 U 0 40 Y Y 1 L N
+F0 "U" 0 200 50 H V L CNN
+F1 "CP2102N-A02-GQFN28_CP2102N-A02-GQFN28" 0 300 50 H V L CNN
+F2 "Silicon_Labs-CP2102N-A02-GQFN28-*" 0 400 50 H I L CNN
+F3 "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf" 0 500 50 H I L CNN
+F4 "+85°C" 0 600 50 H I L CNN "ambient temperature range high"
+F5 "-40°C" 0 700 50 H I L CNN "ambient temperature range low"
+F6 "No" 0 800 50 H I L CNN "automotive"
+F7 "IC" 0 900 50 H I L CNN "category"
+F8 "12Mbits/s" 0 1000 50 H I L CNN "data rate"
+F9 "Integrated Circuits (ICs)" 0 1100 50 H I L CNN "device class L1"
+F10 "Interface ICs" 0 1200 50 H I L CNN "device class L2"
+F11 "USB Interface ICs" 0 1300 50 H I L CNN "device class L3"
+F12 "IC USB TO UART BRIDGE QFN28" 0 1400 50 H I L CNN "digikey description"
+F13 "336-5889-ND" 0 1500 50 H I L CNN "digikey part number"
+F14 "0.8mm" 0 1600 50 H I L CNN "height"
+F15 "UART,USB" 0 1700 50 H I L CNN "interface"
+F16 "QFN50P500X500X75-28" 0 1800 50 H I L CNN "ipc land pattern name"
+F17 "Yes" 0 1900 50 H I L CNN "lead free"
+F18 "a2a1e7d0a9857bbd" 0 2000 50 H I L CNN "library id"
+F19 "Silicon Labs" 0 2100 50 H I L CNN "manufacturer"
+F20 "+105°C" 0 2200 50 H I L CNN "max junction temp"
+F21 "5.25V" 0 2300 50 H I L CNN "max supply voltage"
+F22 "1.71V" 0 2400 50 H I L CNN "min supply voltage"
+F23 "Full Speed USB to UART Bridge USB 2.0 3.3V Tube Automotive 28-Pin QFN EP" 0 2500 50 H I L CNN "mouser description"
+F24 "634-CP2102NA02GQFN28" 0 2600 50 H I L CNN "mouser part number"
+F25 "1.3-13.7mA" 0 2700 50 H I L CNN "nominal supply current"
+F26 "1" 0 2800 50 H I L CNN "number of ports"
+F27 "QFN28" 0 2900 50 H I L CNN "package"
+F28 "Yes" 0 3000 50 H I L CNN "rohs"
+F29 "0mm" 0 3100 50 H I L CNN "standoff height"
+F30 "+85°C" 0 3200 50 H I L CNN "temperature range high"
+F31 "-40°C" 0 3300 50 H I L CNN "temperature range low"
+F32 "USB 2.0" 0 3400 50 H I L CNN "usb standard"
 DRAW
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 50 50 -150 1 1 10 f
-X Pin_1 1 -200 0 150 R 50 50 1 1 P
-X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+S 200 100 2200 -2000 1 1 0 f
+X DCD 1 100 -700 100 R 40 40 1 1 I
+X NC 10 100 -1900 100 R 40 40 1 1 P
+X ~SUSPEND~ 11 2300 0 100 L 40 40 1 1 O
+X SUSPEND 12 2300 -100 100 L 40 40 1 1 O
+X CHREN 13 2300 -300 100 L 40 40 1 1 O
+X CHR1 14 2300 -500 100 L 40 40 1 1 O
+X CHR0 15 2300 -400 100 L 40 40 1 1 O
+X GPIO.3/WAKEUP 16 2300 -1300 100 L 40 40 1 1 B
+X GPIO.2/RS485 17 2300 -1200 100 L 40 40 1 1 B
+X GPIO.1/RXT 18 2300 -1100 100 L 40 40 1 1 B
+X GPIO.0/TXT 19 2300 -1000 100 L 40 40 1 1 B
+X ~RI~/CLK 2 100 -1400 100 R 40 40 1 1 B
+X GPIO.6 20 2300 -1600 100 L 40 40 1 1 B
+X GPIO.5 21 2300 -1500 100 L 40 40 1 1 B
+X GPIO.4 22 2300 -1400 100 L 40 40 1 1 B
+X CTS 23 100 -600 100 R 40 40 1 1 I
+X RTS 24 100 -1200 100 R 40 40 1 1 O
+X RXD 25 2300 -700 100 L 40 40 1 1 I
+X TXD 26 2300 -800 100 L 40 40 1 1 O
+X DSR 27 100 -1600 100 R 40 40 1 1 I
+X DTR 28 100 -1700 100 R 40 40 1 1 O
+X GND 29 2300 -1900 100 L 40 40 1 1 W
+X GND 3 2300 -1800 100 L 40 40 1 1 W
+X D+ 4 100 -900 100 R 40 40 1 1 P
+X D- 5 100 -1000 100 R 40 40 1 1 P
+X VDD 6 100 0 100 R 40 40 1 1 W
+X VREGIN 7 100 -200 100 R 40 40 1 1 I
+X VBUS 8 100 -100 100 R 40 40 1 1 I
+X ~RST~ 9 100 -400 100 R 40 40 1 1 I
 ENDDRAW
 ENDDEF
 #
@@ -555,69 +606,6 @@ F3 "" 0 0 50 H I C CNN
 DRAW
 P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
 X GND 1 0 0 0 D 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# terrarium-rescue_CP2102N-A02-GQFN24-CP2102N-A02-GQFN24
-#
-DEF terrarium-rescue_CP2102N-A02-GQFN24-CP2102N-A02-GQFN24 U 0 40 Y Y 1 L N
-F0 "U" 0 200 50 H V L CNN
-F1 "terrarium-rescue_CP2102N-A02-GQFN24-CP2102N-A02-GQFN24" 0 300 50 H V L CNN
-F2 "Silicon_Labs-CP2102N-A02-GQFN24-*" 0 400 50 H I L CNN
-F3 "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf" 0 500 50 H I L CNN
-F4 "+85°C" 0 600 50 H I L CNN "ambient temperature range high"
-F5 "-40°C" 0 700 50 H I L CNN "ambient temperature range low"
-F6 "No" 0 800 50 H I L CNN "automotive"
-F7 "IC" 0 900 50 H I L CNN "category"
-F8 "Integrated Circuits (ICs)" 0 1000 50 H I L CNN "device class L1"
-F9 "Interface ICs" 0 1100 50 H I L CNN "device class L2"
-F10 "Controllers" 0 1200 50 H I L CNN "device class L3"
-F11 "IC USB TO UART BRIDGE QFN24" 0 1300 50 H I L CNN "digikey description"
-F12 "336-5887-ND" 0 1400 50 H I L CNN "digikey part number"
-F13 "USB-to-UART Bridge" 0 1500 50 H I L CNN "function"
-F14 "0.8mm" 0 1600 50 H I L CNN "height"
-F15 "UART,USB" 0 1700 50 H I L CNN "interface"
-F16 "QFN50P400X400X75-24" 0 1800 50 H I L CNN "ipc land pattern name"
-F17 "Yes" 0 1900 50 H I L CNN "lead free"
-F18 "82c998266368f3e9" 0 2000 50 H I L CNN "library id"
-F19 "Silicon Labs" 0 2100 50 H I L CNN "manufacturer"
-F20 "5.25V" 0 2200 50 H I L CNN "max supply voltage"
-F21 "1.71V" 0 2300 50 H I L CNN "min supply voltage"
-F22 "Full Speed USB to UART Bridge USB 2.0 3.3V Tube Automotive 24-Pin QFN EP" 0 2400 50 H I L CNN "mouser description"
-F23 "634-CP2102NA02GQFN24" 0 2500 50 H I L CNN "mouser part number"
-F24 "9.5-13.7mA" 0 2600 50 H I L CNN "nominal supply current"
-F25 "QFN-24" 0 2700 50 H I L CNN "package"
-F26 "Yes" 0 2800 50 H I L CNN "rohs"
-F27 "0mm" 0 2900 50 H I L CNN "standoff height"
-F28 "+85°C" 0 3000 50 H I L CNN "temperature range high"
-F29 "-40°C" 0 3100 50 H I L CNN "temperature range low"
-DRAW
-S 200 100 1800 -1900 1 1 0 f
-X ~RI~/CLK 1 1900 -1200 100 L 40 40 1 1 B
-X NC 10 100 -1700 100 R 40 40 1 1 P
-X GPIO.3/WAKEUP 11 1900 -300 100 L 40 40 1 1 B
-X GPIO.2/RS485 12 1900 -200 100 L 40 40 1 1 B
-X GPIO.1/RXT 13 1900 -100 100 L 40 40 1 1 B
-X GPIO.0/TXT 14 1900 0 100 L 40 40 1 1 B
-X ~SUSPEND~ 15 1900 -600 100 L 40 40 1 1 O
-X NC 16 100 -1800 100 R 40 40 1 1 P
-X SUSPEND 17 1900 -500 100 L 40 40 1 1 O
-X CTS 18 1900 -800 100 L 40 40 1 1 I
-X RTS 19 1900 -1300 100 L 40 40 1 1 O
-X GND 2 1900 -1700 100 L 40 40 1 1 W
-X RXD 20 1900 -1400 100 L 40 40 1 1 I
-X TXD 21 1900 -1500 100 L 40 40 1 1 O
-X DSR 22 1900 -1000 100 L 40 40 1 1 I
-X DTR 23 1900 -1100 100 L 40 40 1 1 O
-X DCD 24 1900 -900 100 L 40 40 1 1 I
-X GND 25 1900 -1800 100 L 40 40 1 1 W
-X D+ 3 100 -900 100 R 40 40 1 1 P
-X D- 4 100 -1000 100 R 40 40 1 1 P
-X VIO 5 100 -200 100 R 40 40 1 1 W
-X VDD 6 100 0 100 R 40 40 1 1 W
-X VREGIN 7 100 -400 100 R 40 40 1 1 W
-X VBUS 8 100 -700 100 R 40 40 1 1 W
-X ~RST~ 9 100 -1300 100 R 40 40 1 1 I
 ENDDRAW
 ENDDEF
 #

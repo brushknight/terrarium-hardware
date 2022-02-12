@@ -173,9 +173,9 @@ F 3 "~" H 5800 6900 50  0001 C CNN
 	1    5800 6900
 	1    0    0    -1  
 $EndComp
-Text GLabel 5600 6900 0    50   Input ~ 0
-220N
 Text GLabel 5600 7000 0    50   Input ~ 0
+220N
+Text GLabel 5600 6900 0    50   Input ~ 0
 220L
 Text GLabel 5250 3400 0    50   Input ~ 0
 220L
