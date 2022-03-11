@@ -15,67 +15,6 @@ Comment4 ""
 $EndDescr
 Text Notes 700  650  0    50   ~ 0
 External device connectors
-Text GLabel 3450 6800 0    50   Input ~ 0
-G25
-Text GLabel 3500 4800 0    50   Input ~ 0
-G4
-$Comp
-L power:GND #PWR0134
-U 1 1 61BA8A6E
-P 4250 5100
-F 0 "#PWR0134" H 4250 4850 50  0001 C CNN
-F 1 "GND" V 4255 4972 50  0000 R CNN
-F 2 "" H 4250 5100 50  0001 C CNN
-F 3 "" H 4250 5100 50  0001 C CNN
-	1    4250 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R3
-U 1 1 61BA8A74
-P 3750 4800
-F 0 "R3" V 3850 4800 50  0000 C CNN
-F 1 "150ohm" V 3650 4800 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 3750 4800 50  0001 C CNN
-F 3 "~" H 3750 4800 50  0001 C CNN
-	1    3750 4800
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:LED LED2
-U 1 1 61BA8A7A
-P 3900 4000
-F 0 "LED2" H 4000 3900 50  0000 R CNN
-F 1 "ACTIVE" H 4000 4100 50  0000 R CNN
-F 2 "LED_SMD:LED_1206_3216Metric" H 3900 4000 50  0001 C CNN
-F 3 "~" H 3900 4000 50  0001 C CNN
-	1    3900 4000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Diode:1N47xxA D2
-U 1 1 61BA8AA6
-P 4650 4150
-F 0 "D2" V 4650 4200 50  0000 L CNN
-F 1 "M7" V 4650 3950 50  0000 L CNN
-F 2 "Diode_SMD:D_2010_5025Metric" H 4650 3975 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/85816/1n4728a.pdf" H 4650 4150 50  0001 C CNN
-	1    4650 4150
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R4
-U 1 1 619544C9
-P 4450 4600
-F 0 "R4" V 4550 4600 50  0000 C CNN
-F 1 "10" V 4350 4600 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 4450 4600 50  0001 C CNN
-F 3 "~" H 4450 4600 50  0001 C CNN
-	1    4450 4600
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4350 4600 4250 4600
 Text Notes 3050 650  0    50   ~ 0
 Relays
 Wire Notes Line
@@ -152,116 +91,20 @@ Wire Wire Line
 Wire Wire Line
 	900  5000 900  4900
 $Comp
-L Connector:Screw_Terminal_01x02 S2
-U 1 1 61B1C1A7
-P 5050 3050
-F 0 "S2" H 5130 3042 50  0000 L CNN
-F 1 "Heater 1 Out" H 5130 2951 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5050 3050 50  0001 C CNN
-F 3 "~" H 5050 3050 50  0001 C CNN
-	1    5050 3050
-	-1   0    0    1   
-$EndComp
-$Comp
 L Connector:Screw_Terminal_01x02 S0
 U 1 1 61B2225A
-P 5800 6900
-F 0 "S0" H 5880 6892 50  0000 L CNN
-F 1 "Power 220 in" H 5880 6801 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5800 6900 50  0001 C CNN
-F 3 "~" H 5800 6900 50  0001 C CNN
-	1    5800 6900
+P 5650 6950
+F 0 "S0" H 5730 6942 50  0000 L CNN
+F 1 "Power 220 in" H 5730 6851 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5650 6950 50  0001 C CNN
+F 3 "~" H 5650 6950 50  0001 C CNN
+	1    5650 6950
 	1    0    0    -1  
 $EndComp
-Text GLabel 5600 7000 0    50   Input ~ 0
+Text GLabel 5450 7050 0    50   Input ~ 0
 220N
-Text GLabel 5600 6900 0    50   Input ~ 0
+Text GLabel 5450 6950 0    50   Input ~ 0
 220L
-Text GLabel 5250 3400 0    50   Input ~ 0
-220L
-Text GLabel 5250 2950 2    50   Input ~ 0
-220N
-$Comp
-L power:GND #PWR01
-U 1 1 61BD2EC9
-P 4250 7150
-F 0 "#PWR01" H 4250 6900 50  0001 C CNN
-F 1 "GND" V 4255 7022 50  0000 R CNN
-F 2 "" H 4250 7150 50  0001 C CNN
-F 3 "" H 4250 7150 50  0001 C CNN
-	1    4250 7150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R7
-U 1 1 61BD2ECF
-P 3750 6800
-F 0 "R7" V 3850 6800 50  0000 C CNN
-F 1 "150ohm" V 3650 6800 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 3750 6800 50  0001 C CNN
-F 3 "~" H 3750 6800 50  0001 C CNN
-	1    3750 6800
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:LED LED3
-U 1 1 61BD2ED5
-P 3900 5950
-F 0 "LED3" H 4000 5850 50  0000 R CNN
-F 1 "ACTIVE" H 4000 6050 50  0000 R CNN
-F 2 "LED_SMD:LED_1206_3216Metric" H 3900 5950 50  0001 C CNN
-F 3 "~" H 3900 5950 50  0001 C CNN
-	1    3900 5950
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+5V #PWR02
-U 1 1 61BD2EDD
-P 4250 5750
-F 0 "#PWR02" H 4250 5600 50  0001 C CNN
-F 1 "+5V" H 4150 5900 50  0000 L CNN
-F 2 "" H 4250 5750 50  0001 C CNN
-F 3 "" H 4250 5750 50  0001 C CNN
-	1    4250 5750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N47xxA D3
-U 1 1 61BD2EEF
-P 4700 6100
-F 0 "D3" V 4700 6150 50  0000 L CNN
-F 1 "M7" V 4700 5900 50  0000 L CNN
-F 2 "Diode_SMD:D_2010_5025Metric" H 4700 5925 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/85816/1n4728a.pdf" H 4700 6100 50  0001 C CNN
-	1    4700 6100
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R6
-U 1 1 61BD2EF7
-P 4500 6550
-F 0 "R6" V 4600 6550 50  0000 C CNN
-F 1 "10" V 4400 6550 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 4500 6550 50  0001 C CNN
-F 3 "~" H 4500 6550 50  0001 C CNN
-	1    4500 6550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:Screw_Terminal_01x02 S3
-U 1 1 61BD2F06
-P 5100 5000
-F 0 "S3" H 5180 4992 50  0000 L CNN
-F 1 "Heater 2 Out" H 5180 4901 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5100 5000 50  0001 C CNN
-F 3 "~" H 5100 5000 50  0001 C CNN
-	1    5100 5000
-	-1   0    0    1   
-$EndComp
-Text GLabel 5250 5350 0    50   Input ~ 0
-220L
-Text GLabel 5300 4900 2    50   Input ~ 0
-220N
 $Comp
 L LED:WS2812B ALED1
 U 1 1 6197A54B
@@ -533,34 +376,6 @@ F 3 "https://www.vishay.com/docs/85816/1n4728a.pdf" H 9400 5900 50  0001 C CNN
 	1    9400 5900
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:Q_NPN_BEC Q3
-U 1 1 61BD2EC2
-P 4150 6800
-F 0 "Q3" H 4350 6800 50  0000 L CNN
-F 1 "S8050" H 4000 6650 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4350 6725 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 4150 6800 50  0001 L CNN
-	1    4150 6800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4400 6550 4250 6550
-Wire Wire Line
-	4250 6550 4250 6600
-Wire Wire Line
-	4250 7150 4250 7000
-$Comp
-L Device:Q_NPN_BEC Q2
-U 1 1 61CE5055
-P 4150 4800
-F 0 "Q2" H 4350 4800 50  0000 L CNN
-F 1 "S8050" H 4000 4650 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4350 4725 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 4150 4800 50  0001 L CNN
-	1    4150 4800
-	1    0    0    -1  
-$EndComp
 Text GLabel 10050 3700 2    50   Input ~ 0
 G33
 Wire Wire Line
@@ -667,96 +482,6 @@ Wire Wire Line
 Wire Wire Line
 	8150 5150 8000 5150
 $Comp
-L Device:R_Small R16
-U 1 1 61DC43A6
-P 3900 6350
-F 0 "R16" V 4000 6350 50  0000 C CNN
-F 1 "5k" V 3800 6350 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 3900 6350 50  0001 C CNN
-F 3 "~" H 3900 6350 50  0001 C CNN
-	1    3900 6350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4250 5750 4250 5800
-Wire Wire Line
-	3450 6800 3650 6800
-Wire Wire Line
-	3850 6800 3950 6800
-Wire Wire Line
-	4250 5000 4250 5100
-Wire Wire Line
-	3500 4800 3650 4800
-Wire Wire Line
-	3850 4800 3950 4800
-$Comp
-L Device:R_Small R15
-U 1 1 61FA0AB2
-P 3900 4400
-F 0 "R15" V 4000 4400 50  0000 C CNN
-F 1 "5k" V 3800 4400 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 3900 4400 50  0001 C CNN
-F 3 "~" H 3900 4400 50  0001 C CNN
-	1    3900 4400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4250 3750 4250 3850
-$Comp
-L power:+5V #PWR0135
-U 1 1 61BA8A93
-P 4250 3750
-F 0 "#PWR0135" H 4250 3600 50  0001 C CNN
-F 1 "+5V" H 4150 3900 50  0000 L CNN
-F 2 "" H 4250 3750 50  0001 C CNN
-F 3 "" H 4250 3750 50  0001 C CNN
-	1    4250 3750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4550 4600 4650 4600
-Wire Wire Line
-	4650 4000 4650 3850
-Connection ~ 4650 3850
-Wire Wire Line
-	4650 3850 5050 3850
-Wire Wire Line
-	4650 4300 4650 4600
-Connection ~ 4650 4600
-Wire Wire Line
-	4650 4600 5050 4600
-Wire Wire Line
-	4250 3850 4650 3850
-Wire Wire Line
-	3900 4300 3900 4150
-Wire Wire Line
-	3900 4500 3900 4600
-Wire Wire Line
-	3900 6250 3900 6100
-Wire Wire Line
-	3900 6450 3900 6550
-Wire Wire Line
-	4700 5950 4700 5800
-Connection ~ 4700 5800
-Wire Wire Line
-	4700 6250 4700 6550
-Wire Wire Line
-	4700 6550 4600 6550
-Wire Wire Line
-	4250 5800 4700 5800
-Wire Wire Line
-	3900 4600 4250 4600
-Connection ~ 4250 4600
-Wire Wire Line
-	3900 3850 4250 3850
-Connection ~ 4250 3850
-Wire Wire Line
-	3900 6550 4250 6550
-Connection ~ 4250 6550
-Wire Wire Line
-	4250 5800 3900 5800
-Connection ~ 4250 5800
-$Comp
 L Connector_Generic:Conn_01x04 UART2
 U 1 1 61F5C66B
 P 1350 1150
@@ -807,224 +532,8 @@ Wire Wire Line
 	1050 1250 1150 1250
 Wire Notes Line
 	700  700  2900 700 
-Wire Wire Line
-	5450 5800 5450 6050
-Wire Wire Line
-	5475 6050 5450 6050
-Wire Wire Line
-	5450 6200 5475 6200
-Wire Wire Line
-	5450 6200 5450 6550
-Wire Wire Line
-	4700 6550 5450 6550
-Connection ~ 4700 6550
-Wire Wire Line
-	4700 5800 5450 5800
-Wire Wire Line
-	5050 3850 5050 4100
-Wire Wire Line
-	5050 4250 5050 4600
 Wire Notes Line
 	6650 700  3050 700 
-Wire Wire Line
-	5300 5000 5475 5000
-Wire Wire Line
-	5250 5350 5475 5350
-$Comp
-L terrarium-rescue:G3MB-202P-G3MB-202P K3
-U 1 1 61E87FAC
-P 5900 5600
-F 0 "K3" V 5946 5471 50  0000 R CNN
-F 1 "G3MB-202P" V 5855 5471 50  0000 R CNN
-F 2 "Omron:RELAY_G3MB-202P" H 5900 5600 50  0001 L BNN
-F 3 "" H 5900 5600 50  0001 L BNN
-F 4 "Omron" H 5900 5600 50  0001 L BNN "MANUFACTURER"
-	1    5900 5600
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5050 4250 5475 4250
-Wire Wire Line
-	5475 4100 5050 4100
-Wire Wire Line
-	5250 3050 5475 3050
-Wire Wire Line
-	5250 3400 5475 3400
-$Comp
-L terrarium-rescue:G3MB-202P-G3MB-202P K2
-U 1 1 61F61190
-P 5900 3650
-F 0 "K2" V 5946 3521 50  0000 R CNN
-F 1 "G3MB-202P" V 5855 3521 50  0000 R CNN
-F 2 "Omron:RELAY_G3MB-202P" H 5900 3650 50  0001 L BNN
-F 3 "" H 5900 3650 50  0001 L BNN
-F 4 "Omron" H 5900 3650 50  0001 L BNN "MANUFACTURER"
-	1    5900 3650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L terrarium-rescue:G3MB-202P-G3MB-202P K1
-U 1 1 61FA2CC9
-P 5850 1600
-F 0 "K1" V 5896 1471 50  0000 R CNN
-F 1 "G3MB-202P" V 5805 1471 50  0000 R CNN
-F 2 "Omron:RELAY_G3MB-202P" H 5850 1600 50  0001 L BNN
-F 3 "" H 5850 1600 50  0001 L BNN
-F 4 "Omron" H 5850 1600 50  0001 L BNN "MANUFACTURER"
-	1    5850 1600
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5250 1350 5425 1350
-Wire Wire Line
-	5100 2200 5425 2200
-Wire Wire Line
-	5100 2050 5425 2050
-Wire Wire Line
-	5250 1000 5425 1000
-Wire Wire Line
-	5100 2200 5100 2550
-Wire Wire Line
-	5100 1800 5100 2050
-Connection ~ 4250 1800
-Wire Wire Line
-	3900 1800 4250 1800
-Connection ~ 4250 2550
-Wire Wire Line
-	3900 2550 4250 2550
-$Comp
-L Device:Q_NPN_BEC Q1
-U 1 1 61CE5D2F
-P 4150 2750
-F 0 "Q1" H 4350 2750 50  0000 L CNN
-F 1 "S8050" H 4000 2600 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4350 2675 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 4150 2750 50  0001 L CNN
-	1    4150 2750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3900 2450 3900 2550
-Wire Wire Line
-	3900 2250 3900 2100
-Wire Wire Line
-	4550 2550 4700 2550
-Wire Wire Line
-	4250 1800 4700 1800
-Wire Wire Line
-	4700 2550 5100 2550
-Connection ~ 4700 2550
-Wire Wire Line
-	4700 2250 4700 2550
-Wire Wire Line
-	4700 1800 5100 1800
-Connection ~ 4700 1800
-Wire Wire Line
-	4700 1950 4700 1800
-Wire Wire Line
-	4250 3050 4250 2950
-Wire Wire Line
-	4250 1700 4250 1800
-$Comp
-L Device:R_Small R14
-U 1 1 61ED0618
-P 3900 2350
-F 0 "R14" V 4000 2350 50  0000 C CNN
-F 1 "5k" V 3800 2350 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 3900 2350 50  0001 C CNN
-F 3 "~" H 3900 2350 50  0001 C CNN
-	1    3900 2350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3850 2750 3950 2750
-Wire Wire Line
-	3500 2750 3650 2750
-Text GLabel 3500 2750 0    50   Input ~ 0
-G5
-Text GLabel 5250 900  2    50   Input ~ 0
-220N
-Text GLabel 5250 1350 0    50   Input ~ 0
-220L
-$Comp
-L Connector:Screw_Terminal_01x02 S1
-U 1 1 61B1A99B
-P 5050 1000
-F 0 "S1" H 5130 992 50  0000 L CNN
-F 1 "Lamp 1 Out" H 5130 901 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5050 1000 50  0001 C CNN
-F 3 "~" H 5050 1000 50  0001 C CNN
-	1    5050 1000
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4350 2550 4250 2550
-$Comp
-L Device:R_Small R2
-U 1 1 619684C1
-P 4450 2550
-F 0 "R2" V 4550 2550 50  0000 C CNN
-F 1 "10" V 4350 2550 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 4450 2550 50  0001 C CNN
-F 3 "~" H 4450 2550 50  0001 C CNN
-	1    4450 2550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Diode:1N47xxA D1
-U 1 1 619E1C86
-P 4700 2100
-F 0 "D1" V 4700 2150 50  0000 L CNN
-F 1 "M7" V 4700 1900 50  0000 L CNN
-F 2 "Diode_SMD:D_2010_5025Metric" H 4700 1925 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/85816/1n4728a.pdf" H 4700 2100 50  0001 C CNN
-	1    4700 2100
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+5V #PWR0133
-U 1 1 61AB5DA0
-P 4250 1700
-F 0 "#PWR0133" H 4250 1550 50  0001 C CNN
-F 1 "+5V" H 4150 1850 50  0000 L CNN
-F 2 "" H 4250 1700 50  0001 C CNN
-F 3 "" H 4250 1700 50  0001 C CNN
-	1    4250 1700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED LED1
-U 1 1 61999143
-P 3900 1950
-F 0 "LED1" H 4000 1850 50  0000 R CNN
-F 1 "ACTIVE" H 4000 2050 50  0000 R CNN
-F 2 "LED_SMD:LED_1206_3216Metric" H 3900 1950 50  0001 C CNN
-F 3 "~" H 3900 1950 50  0001 C CNN
-	1    3900 1950
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R1
-U 1 1 619C01B4
-P 3750 2750
-F 0 "R1" V 3850 2750 50  0000 C CNN
-F 1 "150ohm" V 3650 2750 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 3750 2750 50  0001 C CNN
-F 3 "~" H 3750 2750 50  0001 C CNN
-	1    3750 2750
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0132
-U 1 1 6199C732
-P 4250 3050
-F 0 "#PWR0132" H 4250 2800 50  0001 C CNN
-F 1 "GND" V 4255 2922 50  0000 R CNN
-F 2 "" H 4250 3050 50  0001 C CNN
-F 3 "" H 4250 3050 50  0001 C CNN
-	1    4250 3050
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	6650 7700 3050 7700
 Wire Notes Line
@@ -1349,5 +858,614 @@ F 2 "" H 7150 3950 50  0001 C CNN
 F 3 "" H 7150 3950 50  0001 C CNN
 	1    7150 3950
 	1    0    0    -1  
+$EndComp
+Connection ~ 4100 2400
+Wire Wire Line
+	3850 2400 4100 2400
+Connection ~ 3400 2000
+Wire Wire Line
+	3400 2400 3650 2400
+Wire Wire Line
+	3400 2000 3400 2400
+Wire Wire Line
+	3250 2100 3250 2000
+Wire Wire Line
+	4100 2200 4100 2400
+Wire Wire Line
+	3700 2200 4100 2200
+Wire Wire Line
+	3250 2000 3400 2000
+Wire Wire Line
+	4450 1600 4450 1800
+Connection ~ 4450 1600
+Wire Wire Line
+	5425 2200 4650 2200
+Wire Wire Line
+	4650 1600 4450 1600
+Wire Wire Line
+	4650 2200 4650 1600
+Wire Wire Line
+	4450 1200 4450 1050
+Connection ~ 4450 1200
+Wire Wire Line
+	5425 2050 4850 2050
+Wire Wire Line
+	4850 1200 4450 1200
+Wire Wire Line
+	4850 2050 4850 1200
+$Comp
+L power:GND #PWR016
+U 1 1 62351843
+P 4100 2400
+F 0 "#PWR016" H 4100 2150 50  0001 C CNN
+F 1 "GND" V 4105 2272 50  0000 R CNN
+F 2 "" H 4100 2400 50  0001 C CNN
+F 3 "" H 4100 2400 50  0001 C CNN
+	1    4100 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R15
+U 1 1 62350BC4
+P 3750 2400
+F 0 "R15" V 3850 2400 50  0000 C CNN
+F 1 "10k" V 3650 2400 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 3750 2400 50  0001 C CNN
+F 3 "~" H 3750 2400 50  0001 C CNN
+	1    3750 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3700 1800 4450 1800
+Wire Wire Line
+	4450 1500 4450 1600
+Wire Wire Line
+	4350 1050 4450 1050
+Connection ~ 3700 1050
+Wire Wire Line
+	3750 1050 3700 1050
+Wire Wire Line
+	4150 1050 4050 1050
+Wire Wire Line
+	4450 1300 4450 1200
+$Comp
+L Device:C_Small C7
+U 1 1 622E5D26
+P 4450 1400
+F 0 "C7" H 4300 1500 50  0000 L CNN
+F 1 "10nF" H 4550 1400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 4450 1400 50  0001 C CNN
+F 3 "~" H 4450 1400 50  0001 C CNN
+	1    4450 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 619C01B4
+P 3250 2200
+F 0 "R1" V 3350 2200 50  0000 C CNN
+F 1 "150ohm" V 3150 2200 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 3250 2200 50  0001 C CNN
+F 3 "~" H 3250 2200 50  0001 C CNN
+	1    3250 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED LED1
+U 1 1 61999143
+P 3350 1200
+F 0 "LED1" H 3450 1100 50  0000 R CNN
+F 1 "ACTIVE" H 3450 1300 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 3350 1200 50  0001 C CNN
+F 3 "~" H 3350 1200 50  0001 C CNN
+	1    3350 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0133
+U 1 1 61AB5DA0
+P 3700 950
+F 0 "#PWR0133" H 3700 800 50  0001 C CNN
+F 1 "+5V" H 3600 1100 50  0000 L CNN
+F 2 "" H 3700 950 50  0001 C CNN
+F 3 "" H 3700 950 50  0001 C CNN
+	1    3700 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N47xxA D1
+U 1 1 619E1C86
+P 3900 1050
+F 0 "D1" V 3900 1100 50  0000 L CNN
+F 1 "M7" V 3900 850 50  0000 L CNN
+F 2 "Diode_SMD:D_2010_5025Metric" H 3900 875 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85816/1n4728a.pdf" H 3900 1050 50  0001 C CNN
+	1    3900 1050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 619684C1
+P 4250 1050
+F 0 "R2" V 4350 1050 50  0000 C CNN
+F 1 "10" V 4150 1050 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 4250 1050 50  0001 C CNN
+F 3 "~" H 4250 1050 50  0001 C CNN
+	1    4250 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 S1
+U 1 1 61B1A99B
+P 5050 1000
+F 0 "S1" H 5130 992 50  0000 L CNN
+F 1 "Lamp 1 Out" H 5130 901 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5050 1000 50  0001 C CNN
+F 3 "~" H 5050 1000 50  0001 C CNN
+	1    5050 1000
+	-1   0    0    1   
+$EndComp
+Text GLabel 5250 1350 0    50   Input ~ 0
+220L
+Text GLabel 5250 900  2    50   Input ~ 0
+220N
+Text GLabel 3250 2450 3    50   Input ~ 0
+G5
+Wire Wire Line
+	3250 2450 3250 2300
+$Comp
+L Device:R_Small R14
+U 1 1 61ED0618
+P 3350 1600
+F 0 "R14" V 3450 1600 50  0000 C CNN
+F 1 "5k" V 3250 1600 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 3350 1600 50  0001 C CNN
+F 3 "~" H 3350 1600 50  0001 C CNN
+	1    3350 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 950  3700 1050
+Wire Wire Line
+	3350 1500 3350 1350
+Wire Wire Line
+	3350 1700 3350 1800
+$Comp
+L Device:Q_NPN_BEC Q1
+U 1 1 61CE5D2F
+P 3600 2000
+F 0 "Q1" H 3800 2000 50  0000 L CNN
+F 1 "S8050" H 3450 1850 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3800 1925 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 3600 2000 50  0001 L CNN
+	1    3600 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 1800 3700 1800
+Connection ~ 3700 1800
+Wire Wire Line
+	3350 1050 3700 1050
+Wire Wire Line
+	5250 1000 5425 1000
+Wire Wire Line
+	5250 1350 5425 1350
+$Comp
+L terrarium-rescue:G3MB-202P-G3MB-202P K1
+U 1 1 61FA2CC9
+P 5850 1600
+F 0 "K1" V 5896 1471 50  0000 R CNN
+F 1 "G3MB-202P" V 5805 1471 50  0000 R CNN
+F 2 "omron:RELAY_G3MB-202P" H 5850 1600 50  0001 L BNN
+F 3 "" H 5850 1600 50  0001 L BNN
+F 4 "Omron" H 5850 1600 50  0001 L BNN "MANUFACTURER"
+	1    5850 1600
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4100 4350
+Wire Wire Line
+	3850 4350 4100 4350
+Connection ~ 3400 3950
+Wire Wire Line
+	3400 4350 3650 4350
+Wire Wire Line
+	3400 3950 3400 4350
+Wire Wire Line
+	3250 4050 3250 3950
+Wire Wire Line
+	4100 4150 4100 4350
+Wire Wire Line
+	3700 4150 4100 4150
+Wire Wire Line
+	3250 3950 3400 3950
+Wire Wire Line
+	4450 3550 4450 3750
+Connection ~ 4450 3550
+Wire Wire Line
+	5425 4150 4650 4150
+Wire Wire Line
+	4650 3550 4450 3550
+Wire Wire Line
+	4650 4150 4650 3550
+Wire Wire Line
+	4450 3150 4450 3000
+Connection ~ 4450 3150
+Wire Wire Line
+	5425 4000 4850 4000
+Wire Wire Line
+	4850 3150 4450 3150
+Wire Wire Line
+	4850 4000 4850 3150
+$Comp
+L power:GND #PWR017
+U 1 1 62455158
+P 4100 4350
+F 0 "#PWR017" H 4100 4100 50  0001 C CNN
+F 1 "GND" V 4105 4222 50  0000 R CNN
+F 2 "" H 4100 4350 50  0001 C CNN
+F 3 "" H 4100 4350 50  0001 C CNN
+	1    4100 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R16
+U 1 1 6245515E
+P 3750 4350
+F 0 "R16" V 3850 4350 50  0000 C CNN
+F 1 "10k" V 3650 4350 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 3750 4350 50  0001 C CNN
+F 3 "~" H 3750 4350 50  0001 C CNN
+	1    3750 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3700 3750 4450 3750
+Wire Wire Line
+	4450 3450 4450 3550
+Wire Wire Line
+	4350 3000 4450 3000
+Connection ~ 3700 3000
+Wire Wire Line
+	3750 3000 3700 3000
+Wire Wire Line
+	4150 3000 4050 3000
+Wire Wire Line
+	4450 3250 4450 3150
+$Comp
+L Device:C_Small C8
+U 1 1 6245516B
+P 4450 3350
+F 0 "C8" H 4300 3450 50  0000 L CNN
+F 1 "10nF" H 4550 3350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 4450 3350 50  0001 C CNN
+F 3 "~" H 4450 3350 50  0001 C CNN
+	1    4450 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 62455171
+P 3250 4150
+F 0 "R3" V 3350 4150 50  0000 C CNN
+F 1 "150ohm" V 3150 4150 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 3250 4150 50  0001 C CNN
+F 3 "~" H 3250 4150 50  0001 C CNN
+	1    3250 4150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED LED2
+U 1 1 62455177
+P 3350 3150
+F 0 "LED2" H 3450 3050 50  0000 R CNN
+F 1 "ACTIVE" H 3450 3250 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 3350 3150 50  0001 C CNN
+F 3 "~" H 3350 3150 50  0001 C CNN
+	1    3350 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR01
+U 1 1 6245517D
+P 3700 2900
+F 0 "#PWR01" H 3700 2750 50  0001 C CNN
+F 1 "+5V" H 3600 3050 50  0000 L CNN
+F 2 "" H 3700 2900 50  0001 C CNN
+F 3 "" H 3700 2900 50  0001 C CNN
+	1    3700 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N47xxA D2
+U 1 1 62455183
+P 3900 3000
+F 0 "D2" V 3900 3050 50  0000 L CNN
+F 1 "M7" V 3900 2800 50  0000 L CNN
+F 2 "Diode_SMD:D_2010_5025Metric" H 3900 2825 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85816/1n4728a.pdf" H 3900 3000 50  0001 C CNN
+	1    3900 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R22
+U 1 1 62455189
+P 4250 3000
+F 0 "R22" V 4350 3000 50  0000 C CNN
+F 1 "10" V 4150 3000 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 4250 3000 50  0001 C CNN
+F 3 "~" H 4250 3000 50  0001 C CNN
+	1    4250 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 S2
+U 1 1 6245518F
+P 5050 2950
+F 0 "S2" H 5130 2942 50  0000 L CNN
+F 1 "Lamp 1 Out" H 5130 2851 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5050 2950 50  0001 C CNN
+F 3 "~" H 5050 2950 50  0001 C CNN
+	1    5050 2950
+	-1   0    0    1   
+$EndComp
+Text GLabel 5250 3300 0    50   Input ~ 0
+220L
+Text GLabel 5250 2850 2    50   Input ~ 0
+220N
+Text GLabel 3250 4400 3    50   Input ~ 0
+G4
+Wire Wire Line
+	3250 4400 3250 4250
+$Comp
+L Device:R_Small R6
+U 1 1 62455199
+P 3350 3550
+F 0 "R6" V 3450 3550 50  0000 C CNN
+F 1 "5k" V 3250 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 3350 3550 50  0001 C CNN
+F 3 "~" H 3350 3550 50  0001 C CNN
+	1    3350 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 2900 3700 3000
+Wire Wire Line
+	3350 3450 3350 3300
+Wire Wire Line
+	3350 3650 3350 3750
+$Comp
+L Device:Q_NPN_BEC Q2
+U 1 1 624551A2
+P 3600 3950
+F 0 "Q2" H 3800 3950 50  0000 L CNN
+F 1 "S8050" H 3450 3800 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3800 3875 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 3600 3950 50  0001 L CNN
+	1    3600 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 3750 3700 3750
+Connection ~ 3700 3750
+Wire Wire Line
+	3350 3000 3700 3000
+Wire Wire Line
+	5250 2950 5425 2950
+Wire Wire Line
+	5250 3300 5425 3300
+$Comp
+L terrarium-rescue:G3MB-202P-G3MB-202P K2
+U 1 1 624551AE
+P 5850 3550
+F 0 "K2" V 5896 3421 50  0000 R CNN
+F 1 "G3MB-202P" V 5805 3421 50  0000 R CNN
+F 2 "omron:RELAY_G3MB-202P" H 5850 3550 50  0001 L BNN
+F 3 "" H 5850 3550 50  0001 L BNN
+F 4 "Omron" H 5850 3550 50  0001 L BNN "MANUFACTURER"
+	1    5850 3550
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4100 6350
+Wire Wire Line
+	3850 6350 4100 6350
+Connection ~ 3400 5950
+Wire Wire Line
+	3400 6350 3650 6350
+Wire Wire Line
+	3400 5950 3400 6350
+Wire Wire Line
+	3250 6050 3250 5950
+Wire Wire Line
+	4100 6150 4100 6350
+Wire Wire Line
+	3700 6150 4100 6150
+Wire Wire Line
+	3250 5950 3400 5950
+Wire Wire Line
+	4450 5550 4450 5750
+Connection ~ 4450 5550
+Wire Wire Line
+	5425 6150 4650 6150
+Wire Wire Line
+	4650 5550 4450 5550
+Wire Wire Line
+	4650 6150 4650 5550
+Wire Wire Line
+	4450 5150 4450 5000
+Connection ~ 4450 5150
+Wire Wire Line
+	5425 6000 4850 6000
+Wire Wire Line
+	4850 5150 4450 5150
+Wire Wire Line
+	4850 6000 4850 5150
+$Comp
+L power:GND #PWR018
+U 1 1 6246270B
+P 4100 6350
+F 0 "#PWR018" H 4100 6100 50  0001 C CNN
+F 1 "GND" V 4105 6222 50  0000 R CNN
+F 2 "" H 4100 6350 50  0001 C CNN
+F 3 "" H 4100 6350 50  0001 C CNN
+	1    4100 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R21
+U 1 1 62462711
+P 3750 6350
+F 0 "R21" V 3850 6350 50  0000 C CNN
+F 1 "10k" V 3650 6350 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 3750 6350 50  0001 C CNN
+F 3 "~" H 3750 6350 50  0001 C CNN
+	1    3750 6350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3700 5750 4450 5750
+Wire Wire Line
+	4450 5450 4450 5550
+Wire Wire Line
+	4350 5000 4450 5000
+Connection ~ 3700 5000
+Wire Wire Line
+	3750 5000 3700 5000
+Wire Wire Line
+	4150 5000 4050 5000
+Wire Wire Line
+	4450 5250 4450 5150
+$Comp
+L Device:C_Small C9
+U 1 1 6246271E
+P 4450 5350
+F 0 "C9" H 4300 5450 50  0000 L CNN
+F 1 "10nF" H 4550 5350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 4450 5350 50  0001 C CNN
+F 3 "~" H 4450 5350 50  0001 C CNN
+	1    4450 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 62462724
+P 3250 6150
+F 0 "R4" V 3350 6150 50  0000 C CNN
+F 1 "150ohm" V 3150 6150 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 3250 6150 50  0001 C CNN
+F 3 "~" H 3250 6150 50  0001 C CNN
+	1    3250 6150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED LED3
+U 1 1 6246272A
+P 3350 5150
+F 0 "LED3" H 3450 5050 50  0000 R CNN
+F 1 "ACTIVE" H 3450 5250 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 3350 5150 50  0001 C CNN
+F 3 "~" H 3350 5150 50  0001 C CNN
+	1    3350 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR02
+U 1 1 62462730
+P 3700 4900
+F 0 "#PWR02" H 3700 4750 50  0001 C CNN
+F 1 "+5V" H 3600 5050 50  0000 L CNN
+F 2 "" H 3700 4900 50  0001 C CNN
+F 3 "" H 3700 4900 50  0001 C CNN
+	1    3700 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N47xxA D3
+U 1 1 62462736
+P 3900 5000
+F 0 "D3" V 3900 5050 50  0000 L CNN
+F 1 "M7" V 3900 4800 50  0000 L CNN
+F 2 "Diode_SMD:D_2010_5025Metric" H 3900 4825 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85816/1n4728a.pdf" H 3900 5000 50  0001 C CNN
+	1    3900 5000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R23
+U 1 1 6246273C
+P 4250 5000
+F 0 "R23" V 4350 5000 50  0000 C CNN
+F 1 "10" V 4150 5000 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 4250 5000 50  0001 C CNN
+F 3 "~" H 4250 5000 50  0001 C CNN
+	1    4250 5000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 S3
+U 1 1 62462742
+P 5050 4950
+F 0 "S3" H 5130 4942 50  0000 L CNN
+F 1 "Lamp 1 Out" H 5130 4851 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5050 4950 50  0001 C CNN
+F 3 "~" H 5050 4950 50  0001 C CNN
+	1    5050 4950
+	-1   0    0    1   
+$EndComp
+Text GLabel 5250 5300 0    50   Input ~ 0
+220L
+Text GLabel 5250 4850 2    50   Input ~ 0
+220N
+Text GLabel 3250 6400 3    50   Input ~ 0
+G25
+Wire Wire Line
+	3250 6400 3250 6250
+$Comp
+L Device:R_Small R7
+U 1 1 6246274C
+P 3350 5550
+F 0 "R7" V 3450 5550 50  0000 C CNN
+F 1 "5k" V 3250 5550 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 3350 5550 50  0001 C CNN
+F 3 "~" H 3350 5550 50  0001 C CNN
+	1    3350 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 4900 3700 5000
+Wire Wire Line
+	3350 5450 3350 5300
+Wire Wire Line
+	3350 5650 3350 5750
+$Comp
+L Device:Q_NPN_BEC Q3
+U 1 1 62462755
+P 3600 5950
+F 0 "Q3" H 3800 5950 50  0000 L CNN
+F 1 "S8050" H 3450 5800 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3800 5875 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 3600 5950 50  0001 L CNN
+	1    3600 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 5750 3700 5750
+Connection ~ 3700 5750
+Wire Wire Line
+	3350 5000 3700 5000
+Wire Wire Line
+	5250 4950 5425 4950
+Wire Wire Line
+	5250 5300 5425 5300
+$Comp
+L terrarium-rescue:G3MB-202P-G3MB-202P K3
+U 1 1 62462761
+P 5850 5550
+F 0 "K3" V 5896 5421 50  0000 R CNN
+F 1 "G3MB-202P" V 5805 5421 50  0000 R CNN
+F 2 "omron:RELAY_G3MB-202P" H 5850 5550 50  0001 L BNN
+F 3 "" H 5850 5550 50  0001 L BNN
+F 4 "Omron" H 5850 5550 50  0001 L BNN "MANUFACTURER"
+	1    5850 5550
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC

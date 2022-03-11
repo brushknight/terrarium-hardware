@@ -1,4 +1,5 @@
 (fp_lib_table
   (lib (name logo_fp)(type KiCad)(uri ${KIPRJMOD}/logo_fp)(options "")(descr ""))
   (lib (name cp2102)(type KiCad)(uri ${REPO}/kicad-lib/footprints/cp2102)(options "")(descr ""))
+  (lib (name omron)(type KiCad)(uri ${REPO}/kicad-lib/footprints/omron)(options "")(descr ""))
 )
