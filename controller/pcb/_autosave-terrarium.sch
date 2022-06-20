@@ -326,7 +326,6 @@ $EndComp
 NoConn ~ 10050 1800
 NoConn ~ 10050 2200
 NoConn ~ 10050 2400
-NoConn ~ 10050 2500
 NoConn ~ 10050 3800
 NoConn ~ 10050 3900
 NoConn ~ 8850 1800
@@ -1585,4 +1584,19 @@ Wire Wire Line
 	1700 5000 1700 6000
 Wire Wire Line
 	1700 6000 1600 6000
+$Comp
+L Connector_Generic:Conn_01x01 RESET_EEPROM1
+U 1 1 62BA3F8C
+P 7450 4000
+F 0 "RESET_EEPROM1" H 7530 3992 50  0000 L CNN
+F 1 "data" H 7600 3400 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 7450 4000 50  0001 C CNN
+F 3 "~" H 7450 4000 50  0001 C CNN
+	1    7450 4000
+	0    -1   1    0   
+$EndComp
+Text GLabel 7450 3800 1    50   Input ~ 0
+G2
+Text GLabel 10050 2500 2    50   Input ~ 0
+G2
 $EndSCHEMATC
